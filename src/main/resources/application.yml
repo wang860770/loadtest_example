@@ -1,0 +1,20 @@
+#Dubbo 服务提供者配置
+
+dubbo:
+  application:
+    name: provider #当前服务/应用的名字
+
+  protocol:
+    name: dubbo #通信协议
+    port: 30002 #接口
+
+  registry:
+    address: 127.0.0.1:2181 #注册中心的地址
+    protocol: zookeeper #注册中心的协议
+
+grpc:
+  port: 30001
+
+
+server:
+  port: 8090
